@@ -40,7 +40,7 @@ class ads1015:
         self._lock = Lock()
 
     @synchronized
-    def read(self, channel=0, programmable_gain=PGA_6_144V, samples_per_second=1600):
+    def read(self, channel=0, programmable_gain=PGA_2_048V, samples_per_second=1600):
         # sane defaults
         config = 0x0003 | 0x0100
 
